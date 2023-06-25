@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com o DOM</title>
+    <style>
+        body {
+            background: rgb(97, 132, 228);
+            color: white;
+            font: normal 18pt arial;
+        }
+    </style>
+<body>
+    <h1>Iniciando estudos com o DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>aprendendo a usar o <strong>DOM</strong> em JavaScript</p><br>
+    <div>Clique em mim</div>
+    <script>
+        let corpo = document.body
+        let p1 = document.getElementsByTagName('p')[1] /* o numero entre colchetes informa no caso qual sera o paragrafo utilizado, 0 ou 1 nesse caso*/
+        document.write('Esta escrito assim: ' + p1.innerText) /* write escreve algo na tela. A variavel p1 no caso junto com innertext escreve o paragrafo indicado entre colchetes no caso sem as formatações de tags no caso o <strong>*/
+        corpo.style.background = 'green'
+        p1.style.color = 'blue'
+        document.write(p1.innerHTML) /* write escreve algo na tela. A variavel p1 no caso junto com innerhtml vai pegar o paragrafo indicado entre colchetes no caso e escrever junto com a formatação de tag no caso o <strong> */
+    </script>
+</body>
+</html>
