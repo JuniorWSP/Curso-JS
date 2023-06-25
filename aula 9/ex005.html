@@ -15,14 +15,18 @@
     <h1>Iniciando estudos com o DOM</h1>
     <p>Aqui vai o resultado</p>
     <p>aprendendo a usar o <strong>DOM</strong> em JavaScript</p><br>
-    <div>Clique em mim</div>
+    <div id="msg">Clique em mim</div>
     <script>
         let corpo = document.body
         let p1 = document.getElementsByTagName('p')[1] /* o numero entre colchetes informa no caso qual sera o paragrafo utilizado, 0 ou 1 nesse caso*/
+        let di = document.getElementById('msg')
+        /* let di = document.getElementsByName('msg')[0] poderia utilizar esse comando caso substitui-se o id em div por name*/
         document.write('Esta escrito assim: ' + p1.innerText) /* write escreve algo na tela. A variavel p1 no caso junto com innertext escreve o paragrafo indicado entre colchetes no caso sem as formatações de tags no caso o <strong>*/
         corpo.style.background = 'green'
         p1.style.color = 'blue'
         document.write(p1.innerHTML) /* write escreve algo na tela. A variavel p1 no caso junto com innerhtml vai pegar o paragrafo indicado entre colchetes no caso e escrever junto com a formatação de tag no caso o <strong> */
+        di.style.background = 'red'
+        /* let di = document.querySelector('div#msg') */
     </script>
 </body>
 </html>
