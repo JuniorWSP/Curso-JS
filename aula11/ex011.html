@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfândega</title>
+</head>
+<body>
+    <h1>Informe seu Pais</h1>
+    Pais de Origem:<input type="text" name="txtlocal" id="txtlocal">
+    <input type="button" value="Checagem" onclick="checkin()">
+    <div id="local">
+
+    </div>
+
+    <script>
+        function checkin() {
+            let pais = document.querySelector('#txtlocal').value; //essa parte é a ligação do JS com a caixa de texto referente ao Pais de origem na linha 10 e o .value é utilizado para obter o valor inserido no campo de texto HTML sempre que se abre uma caixa de texto com o input
+            let loc = document.querySelector('#local'); //Necessaria para armazenar a referencia ao elemento div, que permite que atualize o conteudo desse elemento usando o 'local.innerHTML'
+            local.innerHTML = `<p>Vivendo em ${pais}</p>`;
+            if (pais == 'Brasil') {
+            local.innerHTML += `<p>Você é <strong>Brasileiro</strong></p>`;
+            } else {
+            local.innerHTML += `<p>Você é Estrangeiro!</p>`;
+        }
+    }
+//if e else = se e senão = condição composta
+    </script>
+</body>
+</html>
