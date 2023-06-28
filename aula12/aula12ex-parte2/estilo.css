@@ -8,7 +8,7 @@ header {
 }
 section {
     background: white;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 15px;
     width: 500px;
     margin: auto;
@@ -16,7 +16,8 @@ section {
 }
 div {
     text-align: center;
-    padding: auto;
+    padding: 10px;
+    font-weight: bold;
 }
 footer {
     color: white;
